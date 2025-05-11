@@ -1,5 +1,4 @@
 "use client";
-import { Spotlight } from "@/components/ui/spotlight-new";
 import Image from "next/image";
 import Logo1 from "@/public/logo1.png";
 import { FileUpload } from "@/components/ui/file-upload";

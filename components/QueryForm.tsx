@@ -20,10 +20,9 @@ const QueryForm = () => {
     try {
       setQuerying(true);
       const response = await axios.post("/api/query", { query });
-      console.log(response);
       setAnswer((prev) => [...prev, response?.data?.answer]);
     } catch (error) {
-      toast.error("Error in getting response");
+      toast.error(`Error in getting response : ${error}`);
     } finally {
       setQuerying(false);
       setQuery("");
